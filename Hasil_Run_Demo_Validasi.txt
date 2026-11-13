@@ -1,0 +1,53 @@
+Masukkan jumlah mahasiswa: tiga
+Input harus berupa angka bulat. Coba lagi.
+Masukkan jumlah mahasiswa: 2
+
+--- Mahasiswa ke-1 ---
+Nama: 
+Nama tidak boleh kosong. Nama: Budi
+NIM (angka saja): 12A4
+NIM hanya boleh berisi angka (0-9). NIM (angka saja): 0325016
+Nilai Budi (0-100): 105
+Nilai tidak valid: Nilai harus antara 0 dan 100. Nilai yang dimasukkan: 105.0
+Silakan masukkan ulang nilainya.
+Nilai Budi (0-100): delapan
+Input harus berupa angka. Coba lagi.
+Nilai Budi (0-100): 85
+Tersimpan: BUDI | Grade: A | Status: Lulus
+
+--- Mahasiswa ke-2 ---
+Nama: Siti
+NIM (angka saja): 0325017
+Nilai Siti (0-100): 65
+Tersimpan: SITI | Grade: C | Status: Tidak Lulus
+
+===== REKAPITULASI NILAI MAHASISWA =====
+BUDI            | NIM: 0325016 | Nilai:  85.00 | Grade: A | Status: Lulus
+SITI            | NIM: 0325017 | Nilai:  65.00 | Grade: C | Status: Tidak Lulus
+-----------------------------------------
+Rata-rata nilai kelas : 75.00
+Jumlah mahasiswa      : 2
+Jumlah lulus          : 1 mahasiswa
+Jumlah tidak lulus    : 1 mahasiswa
+Nilai tertinggi       : BUDI (85.0)
+Nilai terendah        : SITI (65.0)
+
+Data berhasil ditulis ke file laporan_nilai.txt
+
+===== ISI FILE laporan_nilai.txt =====
+=================================
+     LAPORAN NILAI MAHASISWA     
+=================================
+BUDI            | NIM: 0325016 | Nilai:  85.00 | Grade: A | Status: Lulus
+SITI            | NIM: 0325017 | Nilai:  65.00 | Grade: C | Status: Tidak Lulus
+=================================
+RINGKASAN KELAS
+Rata-rata nilai kelas : 75.00
+Jumlah mahasiswa      : 2 mahasiswa
+Jumlah lulus          : 1 mahasiswa
+Jumlah tidak lulus    : 1 mahasiswa
+Nilai tertinggi       : BUDI (85.0)
+Nilai terendah        : SITI (65.0)
+===== AKHIR FILE =====
+
+Program selesai.

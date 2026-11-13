@@ -1,0 +1,13 @@
+=== UJI ASSERT & BATAS (UjiAssert.java — file uji sementara, tidak ikut dikumpulkan) ===
+
+--- DENGAN -ea (assert aktif) ---
+Uji 1: AssertionError tertangkap: NIM tidak boleh kosong!
+Uji 2: IllegalArgumentException: NIM hanya boleh berisi angka (0-9). Ditemukan karakter: 'A'
+Uji 3: NilaiInvalidException: Nilai harus antara 0 dan 100. Nilai yang dimasukkan: 105.0
+Uji 4: 70 -> grade B, lulus=true | 85 -> grade A | 69.99 -> grade C, lulus=false | 55 -> grade C | 54.99 -> grade D
+
+--- TANPA -ea (assert dilewati JVM) ---
+Uji 1: objek BERHASIL dibuat (assert TIDAK aktif): BUDI
+Uji 2: IllegalArgumentException: NIM hanya boleh berisi angka (0-9). Ditemukan karakter: 'A'
+Uji 3: NilaiInvalidException: Nilai harus antara 0 dan 100. Nilai yang dimasukkan: 105.0
+Uji 4: 70 -> grade B, lulus=true | 85 -> grade A | 69.99 -> grade C, lulus=false | 55 -> grade C | 54.99 -> grade D

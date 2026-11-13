@@ -1,0 +1,15 @@
+=================================
+     LAPORAN NILAI MAHASISWA     
+=================================
+BUDI SANTOSO    | NIM: 0325016 | Nilai:  92.00 | Grade: A | Status: Lulus
+SITI AMINAH     | NIM: 0325017 | Nilai:  78.00 | Grade: B | Status: Lulus
+ANDI PRATAMA    | NIM: 0325018 | Nilai:  62.00 | Grade: C | Status: Tidak Lulus
+DEWI LESTARI    | NIM: 0325019 | Nilai:  45.00 | Grade: D | Status: Tidak Lulus
+=================================
+RINGKASAN KELAS
+Rata-rata nilai kelas : 69.25
+Jumlah mahasiswa      : 4 mahasiswa
+Jumlah lulus          : 2 mahasiswa
+Jumlah tidak lulus    : 2 mahasiswa
+Nilai tertinggi       : BUDI SANTOSO (92.0)
+Nilai terendah        : DEWI LESTARI (45.0)

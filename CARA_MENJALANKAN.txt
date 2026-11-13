@@ -1,0 +1,44 @@
+CARA MENJALANKAN — Pengelola Data Nilai Mahasiswa (Java OOP)
+===========================================================
+Disusun oleh: Agis Lentera Pratama (L0325016)
+File utama : src/app/MainApp.java  (jalankan class ini)
+File hasil : laporan_nilai.txt (terbentuk otomatis di folder tempat program dijalankan)
+
+CARA 1 — NETBEANS (yang dipakai saat presentasi)
+------------------------------------------------
+1. Buat Java Project baru (Ant atau Maven), nama: NilaiMahasiswa
+2. Buat 2 package: model dan app
+   (klik kanan Source Packages > New > Java Package)
+3. Salin file:
+   - Mahasiswa.java dan NilaiInvalidException.java ke package model
+   - MainApp.java ke package app
+4. AKTIFKAN ASSERTION (penting, kalau tidak assert di Mahasiswa.java dilewati JVM):
+   klik kanan project > Properties > Run > VM Options, isi: -ea
+   lalu OK.
+5. Atur Main Class ke app.MainApp:
+   klik kanan project > Properties > Run > Main Class: app.MainApp
+6. Jalankan dengan tombol Run (F6). Ketik input di jendela Output.
+7. File laporan_nilai.txt terbentuk di folder project — buka untuk memeriksa isinya.
+
+CARA 2 — TERMINAL / CMD (untuk verifikasi cepat)
+------------------------------------------------
+Dari folder NilaiMahasiswa, jalankan SATU PER SATU:
+
+   javac -d out src/model/*.java src/app/*.java
+
+   java -ea -cp out app.MainApp
+
+Penjelasan perintah:
+- javac -d out ...  : kompilasi semua file .java, hasil .class ke folder out/
+- java -ea ...      : -ea = enable assertions (mengaktifkan assert)
+- -cp out           : classpath — cari file .class di folder out/
+- app.MainApp       : nama lengkap class utama (paket + nama class)
+
+CATATAN
+-------
+- Kalau dijalankan dua kali, laporan_nilai.txt lama DITIMPA (perilaku bawaan
+  new FileWriter(namaFile)). Itu disengaja: tiap run menghasilkan laporan baru.
+- NIM harus angka saja (0-9). NIM UNS yang mengandung huruf (misal L0325016)
+  tidak bisa dimasukkan apa adanya — sesuai perintah soal Pertemuan 4.
+- Nama yang diketik akan tersimpan dalam huruf KAPITAL semua (toUpperCase),
+  sesuai perintah soal untuk merapikan nama/NIM.
